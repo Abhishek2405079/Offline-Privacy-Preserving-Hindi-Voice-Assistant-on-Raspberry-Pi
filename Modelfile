@@ -1,0 +1,7 @@
+FROM llama3.2
+
+# Low temperature makes it stick to facts (no stories)
+PARAMETER temperature 0.1
+
+# System prompt to force Hindi and brevity
+SYSTEM "You are a helpful assistant. You must answer only in Hindi. Keep your answers short, precise, and under 2 sentences."
